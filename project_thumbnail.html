@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Design Project | Siddiq Junaid</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Styles -->
+    <style>
+        .project-image {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-image:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .tool-badge {
+            transition: all 0.2s ease;
+        }
+        .tool-badge:hover {
+            transform: translateY(-2px);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3B82F6, #10B981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="light bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+    <header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold gradient-text">SJ</a>
+            <a href="index.html#projects" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                ← Back to Portfolio
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <article class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
+            <!-- Hero Section -->
+            <div class="bg-gradient-to-r from-blue-500 to-green-500 p-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-2"> YouTube Thumbnail & Banner Design</h1>
+                <p class="text-xl text-blue-100">Professional designs that boost click-through rates</p>
+            </div>
+            
+            <!-- Project Images -->
+            <div class="p-6 md:p-8 grid grid-cols-1 gap-8">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Gaming Channel Banner</h2>
+                    <img src="images/Gaming Banner (ping 999) 2 .jpg" 
+                         alt="Gaming Channel Banner Design" 
+                         class="project-image rounded-xl w-1546 h-423 border-4 border-white dark:border-gray-700">
+                </div>
+                
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Thumbnail Design</h2>
+                    <img src="images/Sample1.jpg" 
+                         alt="YouTube Thumbnail Design" 
+                         class="project-image rounded-xl w-full h-auto border-4 border-white dark:border-gray-700">
+                </div>
+            </div>
+            
+            <!-- Project Details -->
+            <div class="p-6 md:p-8 bg-gray-50 dark:bg-gray-700">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Project <span class="gradient-text">Details</span></h2>
+                    
+                    <div class="prose dark:prose-invert max-w-none">
+                        <p class="text-lg mb-6 text-gray-600 dark:text-gray-300">
+                            Created high-converting YouTube thumbnails and channel banners for gaming content creators, 
+                            focusing on bold typography, vibrant colors, and clear focal points to maximize click-through rates.
+                        </p>
+                        
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-white">Key Features</h3>
+                        <ul class="mb-6 pl-5 space-y-2 text-gray-600 dark:text-gray-300">
+                            <li class="relative pl-5 before:content-['→'] before:absolute before:left-0 before:text-blue-500">Eye-catching typography with custom fonts</li>
+                            <li class="relative pl-5 before:content-['→'] before:absolute before:left-0 before:text-blue-500">Strategic use of contrast and composition</li>
+                            <li class="relative pl-5 before:content-['→'] before:absolute before:left-0 before:text-blue-500">Platform-optimized dimensions (1280×720 for thumbnails)</li>
+                            <li class="relative pl-5 before:content-['→'] before:absolute before:left-0 before:text-blue-500">Brand-consistent color schemes</li>
+                        </ul>
+                        
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-white">Tools Used</h3>
+                        <div class="flex flex-wrap gap-3 mb-8">
+                            <span class="tool-badge px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full font-medium">Photoshop 2025</span>
+                            <span class="tool-badge px-4 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full font-medium">AI Design Tools</span>
+                            <span class="tool-badge px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full font-medium">Canva Pro</span>
+                            <span class="tool-badge px-4 py-2 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full font-medium">Color Theory</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <a href="index.html#projects" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                            </svg>
+                            Back to All Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Siddiq Junaid A. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

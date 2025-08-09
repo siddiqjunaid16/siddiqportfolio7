@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddiq Junaid A. | Creative Tech Designer & Aeronautical Engineer | Portfolio 2025</title>
+    <meta name="description" content="Siddiq Junaid A. is a creative tech designer specializing in 3D modeling, video editing, and aeronautical engineering solutions. View 2025 portfolio.">
+    <meta name="keywords" content="Siddiq Junaid, aeronautical engineer, creative tech designer, 3D modeling, video editing, portfolio 2025">
+    <meta name="author" content="Siddiq Junaid A.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Siddiq Junaid A | Creative Tech Designer | 2025 Portfolio">
+    <meta property="og:description" content="Explore innovative tech design solutions by Siddiq Junaid A. - Aeronautical Engineer and Creative Designer. Updated for 2025.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://siddiqjunaid.com">
+    <meta property="og:image" content="https://siddiqjunaid.com/images/portfolio-preview.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Siddiq Junaid A. | Creative Tech Designer | 2025">
+    <meta name="twitter:description" content="Innovative tech design solutions by Siddiq Junaid A. - Aeronautical Engineer and Creative Designer. Updated for 2025.">
+    <meta name="twitter:image" content="https://siddiqjunaid.com/images/portfolio-preview.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://siddiqjunaid.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        /* Root variables for consistent theming */
+        :root {
+            --primary: #3B82F6;
+            --secondary: #10B981;
+            --dark-bg: #111827;
+            --light-bg: #F9FAFB;
+            --dark-text: #1F2937;
+            --light-text: #F3F4F6;
+            --card-dark: #1F2937;
+            --card-light: #FFFFFF;
+        }
+        
+        /* Base styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            scroll-behavior: smooth;
+        }
+        
+        /* Theme classes */
+        .dark {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+        }
+        
+        .light {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+        }
+        
+        /* Navigation link hover effect */
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Section reveal animation */
+        .section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Card hover effects */
+        .skill-card, .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .skill-card:hover, .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Project card effects */
+        .project-card {
+            overflow: hidden;
+        }
+        
+        .project-card img {
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        
+        /* Social icon hover effect */
+        .social-icon {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+            color: var(--primary);
+        }
+        
+        /* Gradient text effect */
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Hero section background pattern */
+        .hero-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.15) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        
+        .dark .hero-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+        }
+        
+        /* Dark mode specific overrides */
+        .dark .bg-white {
+            background-color: var(--card-dark) !important;
+        }
+        
+        .dark .text-gray-600 {
+            color: #D1D5DB !important;
+        }
+        
+        .dark .border-gray-300 {
+            border-color: #4B5563 !important;
+        }
+        
+        .dark .bg-gray-50 {
+            background-color: #1F2937 !important;
+        }
+        
+        .dark .bg-blue-50 {
+            background-color: rgba(59, 130, 246, 0.2) !important;
+        }
+        
+        .dark .bg-green-50 {
+            background-color: rgba(16, 185, 129, 0.2) !important;
+        }
+        
+        .dark .bg-purple-50 {
+            background-color: rgba(139, 92, 246, 0.2) !important;
+        }
+        
+        .dark .bg-yellow-50 {
+            background-color: rgba(245, 158, 11, 0.2) !important;
+        }
+        
+        /* Core Web Vitals optimization */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+        
+        /* Improved accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Siddiq ",
+      "url": "https://siddiqjunaid.com",
+      "jobTitle": "Creative Tech Designer & Aeronautical Engineer",
+      "description": "Blending engineering precision with creative design to build innovative solutions.",
+      "image": "https://siddiqjunaid.com/images/profile.jpg",
+      "sameAs": [
+        "https://instagram.com/siddiqjunaid",
+        "https://twitter.com/siddiqjunaid",
+        "https://linkedin.com/in/siddiqjunaid",
+        "https://github.com/siddiqjunaid"
+      ],
+      "knowsAbout": ["Aeronautical Engineering", "3D Modeling", "Video Editing", "Graphic Design"],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Aeronautical Engineering Institute"
+      },
+      "workExample": [
+        {
+          "@type": "CreativeWork",
+          "name": "YouTube Thumbnail Design",
+          "description": "Engaging design for content creator"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Promotional Video",
+          "description": "Brand promotion with motion graphics"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Engineering Component",
+          "description": "Precision 3D CAD model"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="light">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar" aria-label="Main navigation">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home" class="text-2xl font-bold gradient-text" aria-label="Siddiq Junaid">SJ</a>
+            
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#internship" class="nav-link">Internship</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <!-- Theme Toggle and Mobile Menu Button -->
+            <div class="flex items-center space-x-4">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-full" aria-label="Toggle dark/light theme">
+                    <svg id="moon-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                    <svg id="sun-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="mobile-menu-button" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden bg-white dark:bg-gray-800 shadow-lg" id="mobile-menu" aria-labelledby="mobile-menu-button">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#home" class="py-2">Home</a>
+                <a href="#about" class="py-2">About</a>
+                <a href="#skills" class="py-2">Skills</a>
+                <a href="#internship" class="py-2">Internship</a>
+                <a href="#services" class="py-2">Services</a>
+                <a href="#projects" class="py-2">Projects</a>
+                <a href="#contact" class="py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center hero-pattern">
+            <div class="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center">
+                <!-- Hero Text Content -->
+                <div class="md:w-1/2 mb-10 md:mb-0 section">
+                    <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium mb-4">2025</span>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Siddiq</span></h1>
+                    <h2 class="text-2xl md:text-3xl mb-6">Creative Tech Designer</h2>
+                    <p class="text-lg mb-8 opacity-80 max-w-lg">Blending engineering precision with creative design to build innovative solutions for the modern tech </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">View Projects</a>
+                        <a href="#contact" class="px-6 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors">Contact Me</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image/Avatar -->
+                <div class="md:w-1/2 flex justify-center section">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80">
+                        <!-- Blob shape background -->
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute w-full h-full" aria-hidden="true">
+                            <path fill="#3B82F6" d="M45.7,-77.3C59.1,-69.8,70,-56.3,77.8,-41.3C85.6,-26.2,90.3,-9.7,88.8,6.2C87.3,22.1,79.6,37.3,68.7,49.5C57.8,61.7,43.7,70.9,28.4,76.5C13.1,82.1,-3.4,84.1,-19.9,81.1C-36.3,78.1,-52.8,70.1,-65.3,57.7C-77.9,45.3,-86.5,28.5,-88.9,10.8C-91.3,-6.9,-87.5,-25.5,-78.3,-40.2C-69.1,-54.9,-54.5,-65.7,-39.6,-72.3C-24.7,-78.9,-9.5,-81.3,5.1,-79.9C19.7,-78.5,32.3,-84.8,45.7,-77.3Z" transform="translate(100 100)" />
+                        </svg>
+                        <!-- Profile icon -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img 
+                                src="images\Profile.jpeg" 
+                                alt="Siddiq Junaid - Creative Tech Designer" 
+                                class="w-58 h-58 rounded-full object-cover border-4 border-white dark:border-black shadow-5g"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center section">About <span class="gradient-text">Me</span></h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- About Text Content -->
+                    <div class="md:w-1/2 mb-10 md:mb-0 section">
+                        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mx-4">
+                            <h3 class="text-xl font-semibold mb-4">Who I Am</h3>
+                            <p class="mb-6">I'm Siddiq Junaid A., an Aeronautical Engineering professional with a passion for blending technical precision with creative design. In 2025, I continue to evolve my skills to meet the demands of emerging technologies and design trends.</p>
+                            
+                            <h3 class="text-xl font-semibold mb-4">Education & Certification</h3>
+                            <div class="mb-4">
+                                <p class="font-medium">Aeronautical Engineering</p>
+                                <p class="text-sm opacity-75">Currently Pursuing</p>
+                                <p class="text-sm opacity-75">In Sathayabama University</p>
+                            </div>
+                            
+                            <h3 class="text-xl font-semibold mb-4">My Approach</h3>
+                            <p>I blend aeronautical engineering expertise with a passion for design and creativity. From SolidWorks models to video editing and graphic design, I create projects that are both technically sound and visually impressive—smart solutions that work as well as they look.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- About Feature Cards -->
+                    <div class="md:w-1/2 section">
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- Technical Knowledge Card -->
+                            <div class="bg-blue-50 dark:bg-gray-800 p-6 rounded-xl">
+                                <div class="text-blue-500 mb-2">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-medium">Technical Knowledge</h4>
+                                <p class="text-sm opacity-75"> Engineering principles </p>
+                            </div>
+                            
+                            <!-- Creative Design Card -->
+                            <div class="bg-green-50 dark:bg-gray-800 p-6 rounded-xl">
+                                <div class="text-green-500 mb-2">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-medium">Creative Design</h4>
+                                <p class="text-sm opacity-75">Modern aesthetic solutions with purpose</p>
+                            </div>
+                            
+                            <!-- 3D Modeling Card -->
+                            <div class="bg-purple-50 dark:bg-gray-800 p-6 rounded-xl">
+                                <div class="text-purple-500 mb-2">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"></path>
+                                        <path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"></path>
+                                        <path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-medium">3D Modeling</h4>
+                                <p class="text-sm opacity-75">Advanced 2025 modeling techniques</p>
+                            </div>
+                            
+                            <!-- Visual Content Card -->
+                            <div class="bg-yellow-50 dark:bg-gray-800 p-6 rounded-xl">
+                                <div class="text-yellow-500 mb-2">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <h4 class="font-medium">Visual Content</h4>
+                                <p class="text-sm opacity-75">Immersive multimedia creation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center section">My <span class="gradient-text">Skills</span></h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Video Editing Skills Card -->
+                    <div class="skill-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 section">
+                        <div class="text-blue-500 mb-4">
+                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm3 2h6v4H7V5zm8 8v2h1v-2h-1zm-2-2H7v4h6v-4zm2 0h1V9h-1v2zm1-4V5h-1v2h1zM5 5v2H4V5h1zm0 4H4v2h1V9zm-1 4h1v2H4v-2z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Video Editing</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                Adobe Premiere Pro 2025
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                After Effects CC
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                CapCut Pro
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Graphic Designing Skills Card -->
+                    <div class="skill-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 section">
+                        <div class="text-green-500 mb-4">
+                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Graphic Designing</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                Photoshop 2025
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                Canva Pro
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                AI Design Tools
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 3D CAD Modelling Skills Card -->
+                    <div class="skill-card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 section">
+                        <div class="text-purple-500 mb-4">
+                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"></path>
+                                <path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"></path>
+                                <path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">3D CAD Modelling & Design</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                SolidWorks 2025
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                Ansys 
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                AutoCAD 2025
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                MSC Patran (Basics)
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                MSC Nastran (Basics)  
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Section -->
+        <section id="internship" class="py-20 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center section">Professional <span class="gradient-text">Experience</span></h2>
+                
+                
+                          <!-- Internship images (BAIL certificate & photos) -->
+                       <!-- Image Section -->
+    <div class="mb-6 md:mb-0 md:mr-8 flex-shrink-0">
+    <a href="images/BAIL Certificate photo.png" target="_blank">
+        <img src="images/BAIL Certificate photo.png" 
+             alt="BAIL Certificate" 
+             class="rounded-lg shadow-lg w-64 h-40 object-cover mb-4 transition-transform duration-300 hover:scale-105 cursor-pointer">
+    </a>
+    
+    <a href="images/Intership Group Photo.jpg" target="_blank">
+        <img src="images/Intership Group Photo.jpg" 
+             alt="BAIL Internship Photo" 
+             class="rounded-lg shadow-lg w-64 h-40 object-cover transition-transform duration-300 hover:scale-105 cursor-pointer">
+    </a>
+</div>
+
+                        <!-- Experience details -->
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Bengaluru Aircraft Industries (BAIL) — December 2024</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">* Gained proficiency in NASTRAN and MSC PATRAN for structural analysis and optimization.<br>
+
+                                * Performed stress analysis on aircraft components under variable load conditions to support design decisions.<br>
+                                
+                                * Collaborated with cross-functional teams to improve modeling precision and ensure structural integrity.</p>
+                            <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>December 2024</span>
+                            </div>
+                            <div class="mt-4">
+                                <span class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-xs font-medium mr-2 mb-2">Aeronautical Design</span>
+                                <span class="inline-block px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-xs font-medium mr-2 mb-2">Sustainable Aviation</span>
+                                <span class="inline-block px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-xs font-medium mb-2">Team Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--view detials button-->
+            <div class="text-center mt-6">
+                <a href="internship_core.html" 
+                   class="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg transition">
+                    <i class="fa fa-align-justify mr-2" aria-hidden="true"></i>
+                    View Details
+                </a>
+            </div>
+            
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center section">My <span class="gradient-text">Services</span></h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Thumbnail Designing Service Card -->
+                    <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden section">
+                        <div class="h-48 bg-blue-500 flex items-center justify-center">
+                            <!-- AI-generated thumbnail design illustration -->
+                            <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <!-- Background -->
+                                <rect x="20" y="40" width="160" height="120" rx="8" fill="#FFFFFF" />
+                                
+                                <!-- Design elements -->
+                                <circle cx="60" cy="80" r="25" fill="#FF6B6B" />
+                                <rect x="100" y="60" width="60" height="10" rx="2" fill="#4ECDC4" />
+                                <rect x="100" y="80" width="40" height="10" rx="2" fill="#4ECDC4" />
+                                <rect x="100" y="100" width="50" height="10" rx="2" fill="#4ECDC4" />
+                                <rect x="40" y="120" width="120" height="20" rx="4" fill="#FFE66D" />
+                                
+                                <!-- Play button -->
+                                <polygon points="60,80 45,70 45,90" fill="#FFFFFF" />
+                                
+                                <!-- Decorative elements -->
+                                <circle cx="170" cy="50" r="8" fill="#FF6B6B" opacity="0.6" />
+                                <circle cx="30" cy="150" r="6" fill="#4ECDC4" opacity="0.6" />
+                                <circle cx="180" cy="130" r="5" fill="#FFE66D" opacity="0.6" />
+                                
+                                <!-- 2025 badge -->
+                                <circle cx="160" cy="60" r="15" fill="#FF6B6B" />
+                                <text x="160" y="65" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#FFFFFF">2025</text>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Thumbnail Designing</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Eye-catching thumbnails with 2025 design trends that drive engagement and clicks for your content.</p>
+                            <div class="mt-4 flex flex-wrap">
+                                <span class="inline-block px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs font-medium mr-2 mb-2">Enhanced</span>
+                                <span class="inline-block px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded text-xs font-medium mb-2">Conversion Optimized</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Website Designing Service Card -->
+                    <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden section">
+                        <div class="h-48 bg-green-500 flex items-center justify-center">
+                            <!-- AI-generated website design illustration -->
+                            <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <!-- Browser window -->
+                                <rect x="20" y="40" width="160" height="120" rx="6" fill="#FFFFFF" stroke="#333333" stroke-width="2" />
+                                <rect x="20" y="40" width="160" height="20" rx="6" fill="#F0F0F0" stroke="#333333" stroke-width="2" />
+                                
+                                <!-- Browser buttons -->
+                                <circle cx="35" cy="50" r="5" fill="#FF6B6B" />
+                                <circle cx="55" cy="50" r="5" fill="#FFE66D" />
+                                <circle cx="75" cy="50" r="5" fill="#4ECDC4" />
+                                
+                                <!-- Website content -->
+                                <rect x="35" y="75" width="60" height="10" rx="2" fill="#4ECDC4" />
+                                <rect x="35" y="95" width="130" height="5" rx="1" fill="#DDDDDD" />
+                                <rect x="35" y="105" width="130" height="5" rx="1" fill="#DDDDDD" />
+                                <rect x="35" y="115" width="130" height="5" rx="1" fill="#DDDDDD" />
+                                <rect x="35" y="125" width="80" height="5" rx="1" fill="#DDDDDD" />
+                                
+                                <!-- Navigation -->
+                                <rect x="120" y="75" width="10" height="10" rx="2" fill="#FFE66D" />
+                                <rect x="140" y="75" width="10" height="10" rx="2" fill="#FFE66D" />
+                                <rect x="160" y="75" width="10" height="10" rx="2" fill="#FFE66D" />
+                                
+                                <!-- 2025 badge -->
+                                <circle cx="160" cy="60" r="15" fill="#4ECDC4" />
+                                <text x="160" y="65" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#FFFFFF">2025</text>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Website Designing</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Modern, responsive websites with 2025 UX/UI trends that represent your brand and engage your audience.</p>
+                            <div class="mt-4 flex flex-wrap">
+                                <span class="inline-block px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded text-xs font-medium mr-2 mb-2">AI-Powered</span>
+                                <span class="inline-block px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded text-xs font-medium mb-2">SEO Optimized</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video & Reel Editing Service Card -->
+                    <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden section">
+                        <div class="h-48 bg-purple-500 flex items-center justify-center">
+                            <!-- AI-generated video editing illustration -->
+                            <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <!-- Video editor interface -->
+                                <rect x="20" y="40" width="160" height="120" rx="4" fill="#333333" />
+                                
+                                <!-- Preview window -->
+                                <rect x="30" y="50" width="100" height="60" rx="2" fill="#666666" />
+                                <polygon points="80,80 65,70 65,90" fill="#FFFFFF" />
+                                
+                                <!-- Timeline -->
+                                <rect x="30" y="120" width="140" height="30" rx="2" fill="#444444" />
+                                
+                                <!-- Clips -->
+                                <rect x="35" y="125" width="30" height="20" rx="2" fill="#FF6B6B" />
+                                <rect x="70" y="125" width="40" height="20" rx="2" fill="#4ECDC4" />
+                                <rect x="115" y="125" width="25" height="20" rx="2" fill="#FFE66D" />
+                                <rect x="145" y="125" width="20" height="20" rx="2" fill="#FF6B6B" />
+                                
+                                <!-- Controls -->
+                                <rect x="140" y="50" width="30" height="60" rx="2" fill="#555555" />
+                                <circle cx="155" cy="65" r="5" fill="#4ECDC4" />
+                                <circle cx="155" cy="85" r="5" fill="#FFE66D" />
+                                <rect x="145" y="95" width="20" height="5" rx="1" fill="#FFFFFF" />
+                                
+                                <!-- 2025 badge -->
+                                <circle cx="160" cy="60" r="15" fill="#9F7AEA" />
+                                <text x="160" y="65" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#FFFFFF">2025</text>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Video & Reel Editing</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Professional video editing with 2025 techniques that tells your story with impact and style.</p>
+                            <div class="mt-4 flex flex-wrap">
+                                <span class="inline-block px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded text-xs font-medium mr-2 mb-2">Advanced Effects</span>
+                                <span class="inline-block px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded text-xs font-medium mb-2">Viral Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 3D CAD Modelling Service Card -->
+                    <div class="service-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden section">
+                        <div class="h-48 bg-yellow-500 flex items-center justify-center">
+                            <!-- AI-generated 3D CAD modeling illustration -->
+                            <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <!-- 3D grid background -->
+                                <path d="M20,100 L180,100" stroke="#FFFFFF" stroke-width="1" opacity="0.3" />
+                                <path d="M100,40 L100,160" stroke="#FFFFFF" stroke-width="1" opacity="0.3" />
+                                
+                                <!-- 3D cube -->
+                                <polygon points="100,70 140,90 100,110 60,90" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="1" />
+                                <polygon points="100,110 140,90 140,130 100,150" fill="#FFFFFF" fill-opacity="0.1" stroke="#FFFFFF" stroke-width="1" />
+                                <polygon points="100,110 100,150 60,130 60,90" fill="#FFFFFF" fill-opacity="0.15" stroke="#FFFFFF" stroke-width="1" />
+                                
+                                <!-- Measurement lines -->
+                                <line x1="150" y1="90" x2="170" y2="90" stroke="#FFFFFF" stroke-width="1" />
+                                <line x1="150" y1="130" x2="170" y2="130" stroke="#FFFFFF" stroke-width="1" />
+                                <line x1="160" y1="90" x2="160" y2="130" stroke="#FFFFFF" stroke-width="1" />
+                                
+                                <!-- Coordinate axes -->
+                                <line x1="30" y1="160" x2="50" y2="160" stroke="#FF6B6B" stroke-width="2" />
+                                <line x1="30" y1="160" x2="30" y2="140" stroke="#4ECDC4" stroke-width="2" />
+                                <line x1="30" y1="160" x2="40" y2="150" stroke="#FFE66D" stroke-width="2" />
+                                
+                                <!-- 2025 badge -->
+                                <circle cx="160" cy="60" r="15" fill="#FFE66D" />
+                                <text x="160" y="65" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#333333">2025</text>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">3D CAD Modelling</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Precise 3D models using 2025 CAD technologies for engineering and visualization purposes.</p>
+                            <div class="mt-4 flex flex-wrap">
+                                <span class="inline-block px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded text-xs font-medium mr-2 mb-2">Simulation Ready</span>
+                                <span class="inline-block px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded text-xs font-medium mb-2">Digital Twin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center section">Featured <span class="gradient-text">Projects</span></h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1: Thumbnail Design -->
+                    <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden relative section">
+                        <div class="h-48 bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                            <!-- AI-generated thumbnail project illustration -->
+                            <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <!-- Thumbnail frame -->
+                                <rect x="25" y="40" width="150" height="120" rx="8" fill="#FFFFFF" stroke="#333333" stroke-width="2" />
+                                
+                                <!-- Thumbnail content -->
+                                <rect x="35" y="50" width="130" height="70" rx="4" fill="#4ECDC4" />
+                                <circle cx="70" cy="85" r="20" fill="#FF6B6B" />
+                                <polygon points="120,70 150,85 120,100" fill="#FFE66D" />
+                                
+                                <!-- Text elements -->
+                                <rect x="35" y="130" width="80" height="10" rx="2" fill="#333333" />
+                                <rect x="35" y="145" width="50" height="5" rx="1" fill="#666666" />
+                                
+                                <!-- Decorative elements -->
+                                <circle cx="155" cy="140" r="10" fill="#FF6B6B" opacity="0.5" />
+                                
+                                <!-- 2025 badge -->
+                                <circle cx="160" cy="60" r="15" fill="#3B82F6" />
+                                <text x="160" y="65" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#FFFFFF">2025</text>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <h4 class="text-white font-medium mb-2">Thumbnail Design</h4>
+                            <a href="project_thumbnail.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm">View Details</a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-medium">YouTube Thumbnail</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">Engaging design for content creator</p>
+                            <p class="text-xs text-blue-600 dark:text-blue-400 mt-2">2025 Project</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Video Editing -->
+                    <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden relative section">
+                        <div class="h-48 bg-green-100 dark:bg-green-900 flex items-center justify-center">
+                            <!-- AI-generated video project illustration -->
+                            <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <!-- Video player frame -->
+                                <rect x="25" y="40" width="150" height="120" rx="8" fill="#333333" />
+                                
+                                <!-- Video content -->
+                                <rect x="35" y="50" width="130" height="80" rx="4" fill="#666666" />
+                                
+                                <!-- Play button -->
+                                <circle cx="100" cy="90" r="25" fill="#000000" fill-opacity="0.5" />
+                                <polygon points="95,80 110,90 95,100" fill="#FFFFFF" />
+                                
+                                <!-- Progress bar -->
+                                <rect x="35" y="140" width="130" height="5" rx="2" fill="#444444" />
+                                <rect x="35" y="140" width="50" height="5" rx="2" fill="#4ECDC4" />
+                                
+                                <!-- Controls -->
+                                <circle cx="50" cy="155" r="5" fill="#FFFFFF" />
+                                <rect x="65" y="152" width="10" height="6" rx="1" fill="#FFFFFF" />
+                                <rect x="85" y="152" width="10" height="6" rx="1" fill="#FFFFFF" />
+                                <circle cx="150" cy="155" r="5" fill="#FFFFFF" />
+                                
+                                <!-- 2025 badge -->
+                                <circle cx="160" cy="60" r="15" fill="#10B981" />
+                                <text x="160" y="65" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#FFFFFF">2025</text>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <h4 class="text-white font-medium mb-2">Video Editing</h4>
+                            <a href="project_videoediting.html" class="px-4 py-2 bg-green-600 text-white rounded-lg text-sm">View Details</a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-medium">Promotional Video</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">Brand promotion with motion graphics</p>
+                            <p class="text-xs text-green-600 dark:text-green-400 mt-2">2025 Project</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: 3D Model -->
+                    <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden relative section">
+                        <div class="h-48 bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+                            <!-- AI-generated 3D model project illustration -->
+                            <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <!-- 3D model viewport -->
+                                <rect x="25" y="40" width="150" height="120" rx="8" fill="#222222" />
+                                
+                                <!-- Grid -->
+                                <line x1="25" y1="100" x2="175" y2="100" stroke="#444444" stroke-width="1" />
+                                <line x1="100" y1="40" x2="100" y2="160" stroke="#444444" stroke-width="1" />
+                                
+                                <!-- 3D engine part -->
+                                <path d="M100,70 L130,85 L130,115 L100,130 L70,115 L70,85 Z" fill="#666666" stroke="#888888" stroke-width="1" />
+                                <path d="M100,70 L130,85 L100,100 L70,85 Z" fill="#888888" stroke="#AAAAAA" stroke-width="1" />
+                                <path d="M100,100 L130,85 L130,115 L100,130 Z" fill="#777777" stroke="#999999" stroke-width="1" />
+                                <path d="M100,100 L100,130 L70,115 L70,85 Z" fill="#555555" stroke="#777777" stroke-width="1" />
+                                
+                                <!-- Center hole -->
+                                <circle cx="100" cy="100" r="10" fill="#222222" stroke="#AAAAAA" stroke-width="1" />
+                                
+                                <!-- Measurement lines -->
+                                <line x1="140" y1="85" x2="160" y2="85" stroke="#4ECDC4" stroke-width="1" />
+                                <line x1="140" y1="115" x2="160" y2="115" stroke="#4ECDC4" stroke-width="1" />
+                                <line x1="150" y1="85" x2="150" y2="115" stroke="#4ECDC4" stroke-width="1" />
+                                
+                                <!-- 2025 badge -->
+                                <circle cx="160" cy="60" r="15" fill="#8B5CF6" />
+                                <text x="160" y="65" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#FFFFFF">2025</text>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <h4 class="text-white font-medium mb-2">3D Model</h4>
+                            <a href="#" class="px-4 py-2 bg-purple-600 text-white rounded-lg text-sm">View Details</a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-medium">Engineering Component</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">Precision 3D CAD model</p>
+                            <p class="text-xs text-purple-600 dark:text-purple-400 mt-2">2025 Project</p>
+                        </div>
+                    </div>
+                </div>
+<br>
+                <!-- Project 4: Website Development -->
+                <div class="flex justify-center">
+                <div class="project-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden relative" style="width: 460px; height: 300px">
+                    <div class="h-48 bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center relative">
+                        <!-- Centered SVG icon -->
+                        <svg width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- Browser window -->
+                            <rect x="25" y="40" width="150" height="120" rx="8" fill="#FFFFFF" stroke="#333333" stroke-width="2" />
+                            <rect x="25" y="40" width="150" height="20" rx="8" fill="#F0F0F0" stroke="#333333" stroke-width="2" />
+                            
+                            <!-- Browser buttons -->
+                            <circle cx="40" cy="50" r="5" fill="#FF6B6B" />
+                            <circle cx="60" cy="50" r="5" fill="#FFE66D" />
+                            <circle cx="80" cy="50" r="5" fill="#4ECDC4" />
+                            
+                            <!-- Website content -->
+                            <rect x="40" y="70" width="120" height="40" rx="4" fill="#4ECDC4" />
+                            <rect x="60" y="80" width="80" height="10" rx="2" fill="#FFFFFF" />
+                            <rect x="70" y="100" width="60" height="5" rx="1" fill="#FFFFFF" />
+                            
+                            <!-- 2025 badge -->
+                            <circle cx="160" cy="60" r="15" fill="#6366F1" />
+                            <text x="160" y="65" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#FFFFFF">2025</text>
+                        </svg>
+                    </div>
+                    <div class="project-overlay">
+                        <h4 class="text-white font-medium mb-2">Website Development</h4>
+                        <a href="project_website.html" class="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm">View Details</a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium">Websites</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Responsive design with modern UI/UX</p>
+                        <p class="text-xs text-indigo-600 dark:text-indigo-400 mt-2">2025 Project</p>
+                    </div>
+                </div>
+                </div>
+                
+                <!-- View All Projects Button -->
+                <div class="text-center mt-10">
+                    <a href="my_projects.html" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">View All 2025 Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center section">Get In <span class="gradient-text">Touch</span></h2>
+                
+                <div class="flex flex-col md:flex-row">
+                    <!-- Contact Information -->
+                    <div class="md:w-1/2 mb-10 md:mb-0 section">
+                        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+                            <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-4">
+                                <!-- WhatsApp Contact -->
+                                <div class="flex items-center">
+                                    <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                                        <svg class="w-6 h-6 text-blue-600 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">WhatsApp</p>
+                                        <p class="font-medium">📱 8939757069</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Email Contact -->
+                                <div class="flex items-center">
+                                    <div class="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                                        <svg class="w-6 h-6 text-green-600 dark:text-green-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Email</p>
+                                        <p class="font-medium">siddiqjunaid058@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Location -->
+                                <div class="flex items-center">
+                                    <div class="bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
+                                        <svg class="w-6 h-6 text-purple-600 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400">Location</p>
+                                        <p class="font-medium">Chennai, India</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Social Media Links -->
+                                <div class="pt-6">
+                                    <p class="text-gray-600 dark:text-gray-300 mb-4">Connect with me on social media:</p>
+                                    <div class="flex space-x-4">
+                                        <a href="https://wa.me/918939757069" class="social-icon hover:text-green-500" aria-label="WhatsApp">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path d="M20.52 3.48A11.87 11.87 0 0 0 12 0C5.38 0 0 5.38 0 12a11.9 11.9 0 0 0 1.64 6.01L0 24l6.18-1.63A11.88 11.88 0 0 0 12 24c6.62 0 12-5.38 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 21.82c-1.96 0-3.88-.52-5.54-1.5l-.4-.24-3.66.97.98-3.57-.25-.37A9.83 9.83 0 0 1 2.18 12C2.18 6.61 6.61 2.18 12 2.18c2.62 0 5.09 1.02 6.94 2.88A9.78 9.78 0 0 1 21.82 12c0 5.39-4.43 9.82-9.82 9.82zm5.38-7.46c-.29-.14-1.73-.85-1.99-.94-.27-.1-.47-.14-.67.14-.2.29-.77.94-.94 1.14-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.73-1.61-2.02-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.67-1.61-.92-2.2-.24-.57-.48-.49-.67-.5h-.57c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.45 0 1.45 1.02 2.85 1.17 3.04.14.19 2.01 3.06 4.88 4.29.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.11.55-.08 1.73-.71 1.98-1.39.24-.67.24-1.24.17-1.39-.06-.13-.26-.21-.54-.34z"/>
+                                            </svg>
+                                        </a>  
+                                        <a href="https://www.instagram.com/sjcreator_?igsh=cmRuNGd3dDdvOTll" class="social-icon text-gray-600 dark:text-gray-300" aria-label="Instagram">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                            </svg>
+                                        </a>
+                                        <!-- <a href="#" class="social-icon text-gray-600 dark:text-gray-300" aria-label="Twitter">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                                            </svg>
+                                        </a> -->
+                                        <a href="https://www.linkedin.com/in/siddiqjunaid/ " class="social-icon text-gray-600 dark:text-gray-300" aria-label="LinkedIn">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="social-icon text-gray-600 dark:text-gray-300" aria-label="GitHub">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="md:w-1/2 section">
+                        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+                            <h3 class="text-xl font-semibold mb-6">Send Me a Message</h3>
+                            
+                            <form id="contact-form" action="https://formspree.io/f/xblkqjya" method="POST" class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium mb-1">Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white" placeholder="Your name" required>
+                                </div>
+                                
+                                <div>
+                                    <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white" placeholder="Your email" required>
+                                </div>
+                                
+                                <div>
+                                    <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white" placeholder="Your message" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">Send Message</button>
+                            </form>
+                            
+                            <div class="mt-4 text-center text-sm text-gray-500 dark:text-gray-400">
+                                <p>"I’ll Get Back to You Soon" – Siddiq.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold gradient-text">Siddiq Junaid A.</h2>
+                    <p class="mt-2 text-gray-400">Creative Tech Designer</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://wa.me/918939757069" class="social-icon hover:text-green-500" aria-label="WhatsApp">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20.52 3.48A11.87 11.87 0 0 0 12 0C5.38 0 0 5.38 0 12a11.9 11.9 0 0 0 1.64 6.01L0 24l6.18-1.63A11.88 11.88 0 0 0 12 24c6.62 0 12-5.38 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 21.82c-1.96 0-3.88-.52-5.54-1.5l-.4-.24-3.66.97.98-3.57-.25-.37A9.83 9.83 0 0 1 2.18 12C2.18 6.61 6.61 2.18 12 2.18c2.62 0 5.09 1.02 6.94 2.88A9.78 9.78 0 0 1 21.82 12c0 5.39-4.43 9.82-9.82 9.82zm5.38-7.46c-.29-.14-1.73-.85-1.99-.94-.27-.1-.47-.14-.67.14-.2.29-.77.94-.94 1.14-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.73-1.61-2.02-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.67-1.61-.92-2.2-.24-.57-.48-.49-.67-.5h-.57c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.45 0 1.45 1.02 2.85 1.17 3.04.14.19 2.01 3.06 4.88 4.29.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.11.55-.08 1.73-.71 1.98-1.39.24-.67.24-1.24.17-1.39-.06-.13-.26-.21-.54-.34z"/>
+                        </svg>
+                    </a>  
+                    <a href="https://www.instagram.com/sjcreator_?igsh=cmRuNGd3dDdvOTll" class="social-icon hover:text-blue-400" aria-label="Instagram">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>                  
+                  <!--- <a href="#" class="social-icon hover:text-blue-400" aria-label="Twitter">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                        </svg>
+                    </a> -->
+                    <a href="https://www.linkedin.com/in/siddiqjunaid/ " class="social-icon hover:text-blue-400" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon hover:text-blue-400" aria-label="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Siddiq Junaid A. All rights reserved.</p>
+            </div>
+        </div>
+        <!-- Font Awesome CDN for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- Floating Call Button -->
+        <div class="call-float">
+            <a href="tel:+918939757069">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+
+        <!-- Floating WhatsApp Button -->
+        <div class="whatsapp-float">
+            <a href="https://wa.me/+918939757069" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <!-- Styles for buttons -->
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+            }
+            .whatsapp-float a {
+                background: #25D366;
+                color: white;
+                padding: 15px;
+                border-radius: 50%;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+
+            .call-float {
+                position: fixed;
+                bottom: 80px;
+                right: 20px;
+                z-index: 1000;
+            }
+            .call-float a {
+                background: #030bff;
+                color: rgb(255, 255, 255);
+                padding: 15px;
+                border-radius: 50%;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+
+            .call-float a:hover,
+            .whatsapp-float a:hover {
+                transform: scale(1.1);
+                transition: 0.2s ease;
+            }
+        </style>
+    </footer>
+
+    <script>
+        // ===== Theme Toggle Functionality =====
+        const themeToggle = document.getElementById('theme-toggle');
+        const moonIcon = document.getElementById('moon-icon');
+        const sunIcon = document.getElementById('sun-icon');
+        const body = document.body;
+        
+        // Check for saved theme preference or use default
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.remove('light');
+            body.classList.add('dark');
+            moonIcon.classList.add('hidden');
+            sunIcon.classList.remove('hidden');
+        }
+        
+        // Toggle theme when button is clicked
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('light')) {
+                // Switch to dark mode
+                body.classList.remove('light');
+                body.classList.add('dark');
+                moonIcon.classList.add('hidden');
+                sunIcon.classList.remove('hidden');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                // Switch to light mode
+                body.classList.remove('dark');
+                body.classList.add('light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        // ===== Mobile Menu Toggle =====
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+            mobileMenuButton.setAttribute('aria-expanded', !expanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // ===== Navbar Scroll Effect =====
+        const navbar = document.getElementById('navbar');
+        
+        // Add background and shadow to navbar when scrolling
+        function updateNavbar() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'dark:bg-gray-800', 'shadow-md');
+            } else {
+                navbar.classList.remove('bg-white', 'dark:bg-gray-800', 'shadow-md');
+            }
+        }
+        
+        window.addEventListener('scroll', updateNavbar);
+        window.addEventListener('load', updateNavbar);
+        
+        // ===== Section Reveal Animation =====
+        const sections = document.querySelectorAll('.section');
+        
+        // Reveal sections as they come into view
+        function revealSection() {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                // When section is in viewport
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+        
+        // Use Intersection Observer for better performance
+        if ('IntersectionObserver' in window) {
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        sectionObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                sectionObserver.observe(section);
+            });
+        } else {
+            // Fallback for browsers that don't support Intersection Observer
+            window.addEventListener('scroll', revealSection);
+            window.addEventListener('load', revealSection);
+        }
+        
+        // ===== Smooth Scrolling for Navigation =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Scroll to the target element with offset for navbar
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+        });
+        
+        // ===== Contact Form Handling =====
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Simple form validation
+            if (name && email && message) {
+                alert('Thank you for your message! This is a demo form.');
+                contactForm.reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+        
+        // ===== Page Load Performance Optimization =====
+        // Add rel="preconnect" for external resources dynamically
+        function addPreconnect(url) {
+            if (!document.querySelector(`link[rel="preconnect"][href="${url}"]`)) {
+                const link = document.createElement('link');
+                link.rel = 'preconnect';
+                link.href = url;
+                document.head.appendChild(link);
+            }
+        }
+        
+        // Add preconnect for common domains
+        window.addEventListener('load', () => {
+            // Mark the page as fully loaded for SEO metrics
+            if ('performance' in window) {
+                window.performance.mark('fully_loaded');
+            }
+        });
+    </script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'965b383e213a3a9f',t:'MTc1MzYwOTY5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
